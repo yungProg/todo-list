@@ -1,2 +1,5 @@
-# my-webpack
-This repository is template with basic files and configurations for my node.js projects
+# todo list
+
+The project focuses on implementing javascript best practice during development.
+
+This is part of [The Odin Project](https://theodinproject.com) full-stack web development curriculum.
