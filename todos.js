@@ -1,7 +1,15 @@
 import todo from "./src/todo.js";
 
 export default function todos () {
-    const tasks = [];
+    const tasks = [{
+        id: crypto.randomUUID(),
+        title: "In development",
+        dueDate: "06-04-2026",
+        priority: "high",
+        description: "complete this project and push to production before tuesday",
+        updateProperty: function(property, newValue) {this[property] = newValue},
+        category: "general"
+    }];
 
     const getTasks = () => tasks
 

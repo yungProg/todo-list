@@ -1,2 +1,2 @@
 import "./style.css";
-import Todos from "../todos.js";
+import screenUpdater from "./screen_updater.js";
