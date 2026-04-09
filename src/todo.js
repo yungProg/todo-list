@@ -15,5 +15,7 @@ export default function todo (title, startDate, priority, description, category)
         Object.assign(task, newValues)
     }
 
-    return {getTask, updateTodo}
+    const getId = () => getTask().id
+
+    return {getTask, updateTodo, getId}
 }
