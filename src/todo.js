@@ -1,16 +1,19 @@
-export default function todo (title, dueDate, priority, description) {
+export default function todo (title, startDate, priority, description, category) {
     const task = {
         id: crypto.randomUUID(),
         status: false,
         title: title,
-        dueDate: dueDate,
+        startDate: startDate,
         priority: priority,
         description: description,
-        category: "general",
-        updateProperty: function(property, newValue) {this[property] = newValue}
+        category: category,
     };
     
     const getTask = () => task
 
-    return {getTask}
+    const updateTodo = (newValues) => {
+        Object.assign(task, newValues)
+    }
+
+    return {getTask, updateTodo}
 }
