@@ -1,0 +1,126 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    font-size: 100%;
+    margin: 0;
+}
+
+button {
+    background-color: inherit;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+button:disabled:hover {
+    cursor: not-allowed;
+}
+
+button > svg {
+    width: 24px;
+    height: 20px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    background-color: #fff;
+}
+
+.aside {
+    background-color: #f4f4f4;
+    height: 100dvh;
+    padding: 16px;
+}
+
+.new-list-btn, .label, .new-todo-btn {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #f4f4f4;
+    background-color: #3939e3;
+    border: none;
+    border-radius: 8px;
+}
+
+.aside > h2 {
+    text-align: center;
+}
+
+.lists-div {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.label {
+    color: inherit;
+    font-weight: normal;
+    padding: 8px;
+    text-align: left;
+    background-color: coral;
+}
+
+.main-content {
+    padding: 16px;
+}
+
+.new-todo-btn {
+    width: auto;
+    padding-left: 24px;
+    padding-right: 24px;
+    margin-left: auto;
+    display: block;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: 8px;
+    padding-top: 16px;
+}
+
+.todo {
+    padding: 16px;
+    background-color: steelblue;
+    border-radius: 16px;
+    width: 100%;
+    display: grid;
+    grid-template-rows: 32px 250px 32px;
+}
+
+.summary {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+}
+
+.delete-btn, .edit-btn {
+    border: none;
+    background-color: #fff;
+    padding: 4px 0;
+}
+
+.feather-trash-2 {
+    color: red;
+}
+
+.delete-btn {
+    margin-left: auto;
+}
+
+.description {
+    margin: 8px 0;
+}
+
+.todo-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
